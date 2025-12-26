@@ -1,0 +1,612 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: 260px 260px 1fr 1fr;
+    gap: 10px;
+
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* All side panels */
+.panel {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    /* important for internal scrolling */
+    overflow: auto;
+}
+
+/* Main center area */
+#main {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;
+}
+
+/* Timeline grows */
+#timeline {
+    flex: 1;
+    min-height: 0;
+    overflow: auto;
+}
+
+/* Panel container */
+.panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    min-width: 240px;
+    max-height: 100%;
+    padding: 12px;
+
+    background: linear-gradient(180deg, #f4f4f4, #ececec);
+    border-radius: 10px;
+    border: 1px solid #d0d0d0;
+
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+/* Headings for ExpListId panel */
+#ExpListId h3,
+#ExpListId h4 {
+    margin: 4px 0;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Primary buttons for ExpListId panel */
+#ExpListId>button {
+    background: #4f7cff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+#ExpListId>button:hover {
+    background: #3f6be6;
+}
+
+#ExpListId>button:active {
+    transform: scale(0.97);
+}
+
+/* Experiment list */
+#experimentList {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    min-height: 200px;
+    max-height: 220px;
+    padding: 6px;
+
+    background: #fafafa;
+    border-radius: 8px;
+    border: 1px solid #d6d6d6;
+
+    overflow-y: auto;
+}
+
+/* Experiment item */
+#experimentList .item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 6px;
+    border-radius: 6px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+
+    transition:
+        background-color 0.18s ease,
+        border-color 0.18s ease,
+        box-shadow 0.18s ease,
+        transform 0.12s ease;
+}
+
+/* Hover */
+#experimentList .item:hover {
+    background: #f5f8ff;
+    border-color: #c9d6ff;
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.06);
+    transform: translateY(-1px);
+}
+
+/* Active / selected */
+#experimentList .item.active {
+    background: linear-gradient(180deg, #edf2ff, #e6edff);
+    border-color: #4f7cff;
+    box-shadow:
+        0 0 0 2px rgba(79, 124, 255, 0.25),
+        0 2px 8px rgba(79, 124, 255, 0.15);
+    transform: none;
+}
+
+/* Hover on active (subtle) */
+#experimentList .item.active:hover {
+    background: linear-gradient(180deg, #e8efff, #e1e9ff);
+}
+
+/* Experiment input */
+#experimentList input {
+    flex: 1;
+    min-width: 0;
+
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 4px 6px;
+
+    font-size: 13px;
+}
+
+/* Delete button */
+#experimentList .item button {
+    background: transparent;
+    border: none;
+    color: #d9534f;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 2px 6px;
+    border-radius: 6px;
+}
+
+#experimentList .item button:hover {
+    background: #ffeaea;
+}
+
+/* JSON textarea */
+#jsonArea {
+    min-height: 160px;
+    max-height: 300px;
+    resize: vertical;
+
+    background: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px;
+
+    font-family: monospace;
+    font-size: 13px;
+}
+
+/* Base secondary buttons */
+#jsonArea+br+button,
+#jsonArea+br+button+button,
+#jsonArea+br+button+button+button,
+#jsonArea+br+button+button+button+button {
+    background: linear-gradient(180deg, #f2f2f2, #e3e3e3);
+    color: #333;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+
+    padding: 7px 12px;
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition:
+        background 0.18s ease,
+        border-color 0.18s ease,
+        box-shadow 0.18s ease,
+        transform 0.1s ease;
+}
+
+/* Hover */
+#jsonArea+br+button:hover,
+#jsonArea+br+button+button:hover,
+#jsonArea+br+button+button+button:hover,
+#jsonArea+br+button+button+button+button:hover {
+    background: linear-gradient(180deg, #ffffff, #ececec);
+    border-color: #bdbdbd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Active / pressed */
+#jsonArea+br+button:active,
+#jsonArea+br+button+button:active,
+#jsonArea+br+button+button+button:active,
+#jsonArea+br+button+button+button+button:active {
+    background: #e0e0e0;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.12);
+    transform: scale(0.97);
+}
+
+/* Focus (keyboard accessibility) */
+#jsonArea+br+button:focus-visible,
+#jsonArea+br+button+button:focus-visible,
+#jsonArea+br+button+button+button:focus-visible,
+#jsonArea+br+button+button+button+button:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(79, 124, 255, 0.35);
+}
+
+/* Tests panel heading */
+#testsId h3 {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Tests buttons */
+#testsId button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background: linear-gradient(180deg, #ffffff, #f1f1f1);
+    color: #333;
+
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+    padding: 10px 12px;
+
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+
+    cursor: pointer;
+    transition:
+        background 0.18s ease,
+        border-color 0.18s ease,
+        box-shadow 0.18s ease,
+        transform 0.12s ease;
+}
+
+/* Hover */
+#testsId button:hover {
+    background: linear-gradient(180deg, #f7faff, #edf2ff);
+    border-color: #b6c8ff;
+    box-shadow: 0 3px 8px rgba(79, 124, 255, 0.15);
+    transform: translateY(-1px);
+}
+
+/* Active / pressed */
+#testsId button:active {
+    background: #e6ecff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.12);
+    transform: scale(0.98);
+}
+
+/* Focus (keyboard accessibility) */
+#testsId button:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(79, 124, 255, 0.35);
+}
+
+/* Spacing between buttons */
+#testsId button+button {
+    margin-top: 6px;
+}
+
+
+/* Headings */
+#main h3 {
+    margin-bottom: 16px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+/* Primary buttons */
+#main>button {
+    background: #4f7cff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background 0.25s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+#main>button:hover {
+    background: #3f6be6;
+    box-shadow: 0 4px 12px rgba(63, 107, 230, 0.3);
+}
+
+#main>button:active {
+    transform: scale(0.97);
+}
+
+/* Timeline container */
+#timeline {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Timeline item */
+/* Timeline items */
+#timeline .item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border 0.2s ease;
+    cursor: pointer;
+}
+
+/* Active timeline item */
+#timeline .item.active {
+    background: #e4f0ff;
+    /* soft blue highlight */
+    border-left: 4px solid #4f7cff;
+    /* bold left indicator */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    /* slightly stronger shadow */
+    transform: translateY(-2px);
+    /* subtle lift */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border 0.2s ease;
+}
+
+/* Optional: hover effect still applies for active item */
+#timeline .item.active:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14);
+}
+
+
+
+/* Hover effect for items */
+#timeline .item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Controls container */
+#timeline .item .controls {
+    display: flex;
+    gap: 8px;
+}
+
+/* Icon buttons inside controls */
+#timeline .item .controls .icon-btn,
+#timeline .item .controls button {
+    background: #f1f1f5;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover & active effects for buttons */
+#timeline .item .controls .icon-btn:hover,
+#timeline .item .controls button:hover {
+    transform: scale(1.15);
+    background: #e0e0e7;
+}
+
+#timeline .item .controls .icon-btn:active,
+#timeline .item .controls button:active {
+    transform: scale(0.95);
+}
+
+/* Specific color coding for duplicate and delete buttons */
+#timeline .item .controls button:nth-child(3) {
+    color: #4f7cff;
+    font-weight: 600;
+    background: #eaf0ff;
+}
+
+#timeline .item .controls button:nth-child(3):hover {
+    background: #d6e0ff;
+}
+
+#timeline .item .controls button:nth-child(4) {
+    color: #e24f4f;
+    font-weight: 600;
+    background: #ffeaea;
+}
+
+#timeline .item .controls button:nth-child(4):hover {
+    background: #ffcaca;
+}
+
+/* Optional: smooth transition for text inside item */
+#timeline .item>div:first-child {
+    transition: color 0.2s ease;
+}
+
+#timeline .item:hover>div:first-child {
+    color: #4f7cff;
+}
+
+/* Panel container */
+#parametersId {
+    flex-grow: auto;
+}
+
+/* Panel heading */
+#parametersId h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+/* Container */
+#params {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    max-width: 500px;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#params:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Section headings (b elements) */
+#params b {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #1a1a1a;
+}
+
+/* Inputs */
+/* General style for all inputs inside #params */
+#params input {
+    width: 90%;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.15s ease;
+    background: #fdfdfd;
+    align-items: center;
+}
+
+/* Focus state for all inputs */
+#params input:focus {
+    border-color: #4f7cff;
+    box-shadow: 0 0 8px rgba(79, 124, 255, 0.3);
+    transform: scale(1.02);
+    outline: none;
+}
+
+/* Disabled state for all inputs */
+#params input:disabled {
+    background: #f3f3f3;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* Special overrides for color picker */
+#params input[type="color"] {
+    width: 90%;
+    height: 36px;
+    padding: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Color input */
+#params input[type="color"] {
+    width: 90%;
+    height: 36px;
+    border: none;
+    padding: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+#params input[type="color"]:hover {
+    transform: scale(1.1);
+}
+
+/* Checkboxes */
+#params label {
+    display: flex;
+    align-items: center;
+    align-items: baseline;
+    margin-bottom: 14px;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.2s ease;
+}
+
+/* Checkbox inside labels */
+#params input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+    /* aligns with text baseline */
+    transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect for checkbox */
+#params input[type="checkbox"]:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 5px rgba(79, 124, 255, 0.3);
+}
+
+/* Optional: subtle text color change on hover over label */
+#params label:hover {
+    color: #4f7cff;
+}
+
+/* Select dropdown */
+#params select {
+    width: 90%;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    background: #fff url("data:image/svg+xml;charset=US-ASCII,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23999' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 12px center;
+    background-size: 12px 8px;
+    appearance: none;
+    cursor: pointer;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.15s ease;
+}
+
+#params select:focus {
+    border-color: #4f7cff;
+    box-shadow: 0 0 8px rgba(79, 124, 255, 0.3);
+    transform: scale(1.02);
+    outline: none;
+}
+
+#params select:disabled {
+    background: #f3f3f3;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* Horizontal rule */
+#params hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0;
+    transition: background 0.3s ease;
+}
+
+/* Smooth animation for sections appearing (optional) */
+#params input,
+#params select,
+#params label,
+#params b {
+    transition: all 0.25s ease;
+}

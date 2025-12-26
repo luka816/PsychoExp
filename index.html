@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Neuropsych Experiment Builder</title>
+    <style>
+        /* body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        #app {
+            display: flex;
+            height: 100vh;
+        }
+
+        .panel {
+            width: 20%;
+            padding: 10px;
+            background: #f0f0f0;
+            border-right: 1px solid #ccc;
+            overflow: auto;
+        }
+
+        #main {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .item {
+            background: #ddd;
+            margin: 4px 0;
+            padding: 6px;
+            cursor: pointer;
+        }
+
+        .item.active {
+            background: #aaccff;
+        }
+
+        .controls button {
+            margin-right: 3px;
+        } */
+
+        #stimulus {
+            position: fixed;
+            inset: 0;
+            background: white;
+            display: none;
+            overflow: hidden;
+        }
+
+        /* textarea.instruction {
+            width: 100%;
+            background: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 4px;
+        } */
+    </style>
+    <link rel="stylesheet" href="static/style/style.css">
+</head>
+
+<body>
+    <div id="app">
+
+        <!-- Experiments -->
+        <div class="panel" id="ExpListId">
+            <h3>Experiments</h3>
+            <button onclick="addExperiment()">+ New Experiment</button>
+            <div id="experimentList"></div>
+
+            <h4>Create from JSON</h4>
+            <textarea id="jsonArea" rows="10" style="width:100%"></textarea>
+            <br>
+            <button onclick="createExperimentFromJSON()">Create Experiment</button>
+            <button onclick="copyTextarea()">📋 Copy</button>
+            <button onclick="clearTextarea()">🗑️ Clear</button>
+            <button onclick="downloadTextarea()">💾 Download</button>
+        </div>
+
+        <!-- Test Library -->
+        <div class="panel" id="testsId">
+            <h3>Tests</h3>
+            <button onclick="addVisualTest('Visual')">+ New Word/Visual Test</button>
+            <button onclick="addImageTest('Image')">+ New Image Test</button>
+            <button onclick="addWordListTest('WordsList')">+ New WordsList Test</button>
+            <button onclick="addImageListTest('ImageList')">+ New ImageList Test</button>
+
+        </div>
+
+        <!-- Timeline -->
+        <div class="panel" id="main">
+            <h3>Timeline</h3>
+            <button onclick="runExperiment()">▶ Start</button>
+            <button onclick="copyExperiment()">📋 Create JSON</button>
+            <div id="timeline"></div>
+        </div>
+
+        <!-- Parameters -->
+        <div class="panel" id="parametersId">
+            <h3>Parameters</h3>
+            <div id="params">Select test</div>
+        </div>
+
+    </div>
+
+    <div id="stimulus"></div>
+
+    <script>
+
+        let experiments = [];
+        let selectedExperiment = null;
+        let selectedTest = null;
+
+        function getExp() {
+            return experiments.find(e => e.id === selectedExperiment);
+        }
+
+        function uniqueName(base, existing) {
+            let i = 1;
+            let name = base;
+            while (existing.includes(name)) {
+                name = base + "_" + i++;
+            }
+            return name;
+        }
+        const wait = ms => new Promise(r => setTimeout(r, ms))
+
+    </script>
+    <script src="static/json/words.json"></script>
+
+    <script src="static/script/ExperimentActions.js"></script>
+
+    <script src="static/script/TestsModels.js"></script>
+    <script src="static/script/TestActions.js"></script>
+
+    <script src="static/script/RenderUI.js"></script>
+
+
+    <script src="static/script/JsonAreaActions.js"></script>
+    <script src="static/tests/DefaultExperiment.js"></script>
+
+    <script src="static/script/RunExperiment.js"></script>
+
+    <script>// Select your stimulus div once
+        const stim = document.getElementById("stimulus");
+
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape" || e.key === "Esc") {
+                if (stim) stim.style.display = "none";
+                document.exitFullscreen?.();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
