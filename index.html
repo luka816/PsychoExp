@@ -71,6 +71,13 @@
             <div id="experimentList"></div>
 
             <h4>Create from JSON</h4>
+            <input id="jsonUrl" type="text" style="width:100%" />
+
+            <button onclick="CreateExpFromJsonURL(
+                document.getElementById('jsonUrl').value)">
+                Create Exp from Json URL
+            </button>
+            <br>
             <textarea id="jsonArea" rows="10" style="width:100%"></textarea>
             <br>
             <button onclick="createExperimentFromJSON()">Create Experiment</button>
@@ -128,8 +135,6 @@
         const wait = ms => new Promise(r => setTimeout(r, ms))
 
     </script>
-    <script src="static/json/words.json"></script>
-
     <script src="static/script/ExperimentActions.js"></script>
 
     <script src="static/script/TestsModels.js"></script>
@@ -139,7 +144,7 @@
 
 
     <script src="static/script/JsonAreaActions.js"></script>
-    <script src="static/tests/DefaultExperiment.js"></script>
+    <script src="static/tests/DefaultExperiments.js"></script>
 
     <script src="static/script/RunExperiment.js"></script>
 

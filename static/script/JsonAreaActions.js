@@ -66,3 +66,25 @@ function createExperimentFromJSON() {
         alert("JSON error: " + e);
     }
 }
+
+async function CreateExpFromJsonURL(url) {
+    url = url?.trim();
+
+    if (!url) {
+        alert("Please enter a JSON URL");
+        return;
+    }
+
+    try {
+        const res = await fetch(url);
+        if (!res.ok) throw `HTTP ${res.status}`;
+
+        const text = await res.text();
+        JSON.parse(text); // validate
+
+        document.getElementById("jsonArea").value = text;
+        createExperimentFromJSON();
+    } catch (e) {
+        alert("Failed to load JSON: " + e);
+    }
+}
