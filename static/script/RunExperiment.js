@@ -1,3 +1,71 @@
+async function preloadAllExperimentImages(exp) {
+    const allUrls = [];
+
+    for (const t of exp.tests) {
+        try {
+            // ----- SINGLE IMAGE TEST -----
+            if (t.type === "image" && t.params?.imageSrc) {
+                allUrls.push(t.params.imageSrc);
+            }
+
+            // ----- IMAGE LIST TEST -----
+            else if (t.type === "imageList" && t.params?.folderUrl) {
+                let urls = [];
+
+                // Case 1: folderUrl is a JSON file URL
+                if (typeof t.params.folderUrl === "string") {
+                    try {
+                        const res = await fetch(t.params.folderUrl);
+                        if (res.ok) {
+                            const json = await res.json();
+                            if (Array.isArray(json)) urls = json;
+                        } else {
+                            console.warn(`Failed to fetch image list: ${t.params.folderUrl}`);
+                        }
+                    } catch (err) {
+                        console.warn("Error fetching image list:", t.params.folderUrl, err);
+                    }
+                }
+
+                // Case 2: folderUrl is already an array of URLs
+                if (Array.isArray(t.params.folderUrl)) {
+                    urls = t.params.folderUrl;
+                }
+
+                allUrls.push(...urls);
+            }
+        } catch (err) {
+            console.warn("Error processing test for preloading:", t, err);
+        }
+    }
+
+    if (allUrls.length > 0) {
+        console.log(`Preloading ${allUrls.length} images...`);
+        await preloadImages(allUrls);
+        alert("✅ All experiment images loaded and ready!");
+    }
+}
+
+// Preload helper
+async function preloadImages(urls = []) {
+    const promises = urls.map(url => {
+        return new Promise(resolve => {
+            const img = new Image();
+            img.src = url;
+            img.onload = () => resolve(img);
+            img.onerror = () => {
+                console.warn("Failed to load image:", url);
+                resolve(null);
+            };
+        });
+    });
+    const loadedImages = await Promise.all(promises);
+    return loadedImages.filter(img => img);
+}
+
+
+
+
 async function runExperiment() {
     const exp = getExp();
     if (!exp || !Array.isArray(exp.tests)) {
@@ -5,6 +73,7 @@ async function runExperiment() {
         return;
     }
 
+    await preloadAllExperimentImages(exp);
     const stim = document.getElementById("stimulus");
     if (!stim) {
         console.warn("No stimulus element found");
