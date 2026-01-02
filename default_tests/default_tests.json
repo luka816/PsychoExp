@@ -1,0 +1,123 @@
+{
+    "name": "Experiment",
+    "tests": [
+        {
+            "name": "Visual-test-shape",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "color": "#FF0000",
+                "fontSize": 10,
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 0,
+                "borderRadius": 0,
+                "width": 150,
+                "height": 100,
+                "delay": 500,
+                "duration": -1,
+                "position": "left",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Text - Hello",
+            "type": "visual",
+            "params": {
+                "text": "Hello",
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 200,
+                "height": 50,
+                "delay": 300,
+                "duration": 1000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Image - Center",
+            "type": "image",
+            "params": {
+                "imageSrc": "https://github.com/luka816/Experimets_Files/blob/master/images/img1.png?raw=true",
+                "width": 200,
+                "height": 200,
+                "delay": 500,
+                "duration": 1500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Word List - Simple",
+            "type": "wordList",
+            "params": {
+                "fileUrl": "https://raw.githubusercontent.com/luka816/Experimets_Files/refs/heads/master/words_lists/words.json",
+                "color": "#000000",
+                "fontSize": 48,
+                "delay": 300,
+                "duration": 1000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "randomize": false,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Image List - Center Random",
+            "type": "imageList",
+            "params": {
+                "folderUrl": "https://raw.githubusercontent.com/luka816/Experimets_Files/refs/heads/master/images_urls/images.json",
+                "width": 200,
+                "height": 200,
+                "delay": 300,
+                "duration": 1000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "randomize": true,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        }
+    ]
+}

@@ -13,6 +13,8 @@ async function createDefaultExps() {
             await CreateExpFromJsonURL(url);
         }
 
+        CreateExpFromJsonURL("http://127.0.0.1:8000/exps/AHS.json")
+
         document.getElementById("jsonArea").value = "";
     } catch (e) {
         alert("Failed to load default experiments: " + e);

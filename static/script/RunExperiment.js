@@ -64,10 +64,49 @@ async function preloadImages(urls = []) {
 }
 
 
+const experimentReport = {
+    experimentName: "",
+    participantId: "",
+    startedAt: null,
+    endedAt: null,
+    trials: []
+};
+
+function collectParticipantId() {
+    experimentReport.participantId =
+        prompt("Participant ID:", "P001") || "unknown";
+}
+
+function logTrial(data) {
+    experimentReport.trials.push({
+        index: experimentReport.trials.length + 1,
+        timestamp: new Date().toISOString(),
+        ...data
+    });
+}
+
+function downloadJSONReport() {
+    const safeExperiment = experimentReport.experimentName.replace(/\s+/g, "_");
+    const safeParticipant = experimentReport.participantId.replace(/\s+/g, "_");
+    const fileName = `${safeParticipant}_${safeExperiment}.json`;
+
+    // Convert the report to pretty-printed JSON
+    const jsonStr = JSON.stringify(experimentReport, null, 2); // 2-space indentation
+
+    const blob = new Blob([jsonStr], { type: "application/json;charset=utf-8;" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = fileName;
+    a.click();
+    URL.revokeObjectURL(a.href);
+}
+
+
 
 
 async function runExperiment() {
     const exp = getExp();
+    collectParticipantId();
     if (!exp || !Array.isArray(exp.tests)) {
         console.warn("No valid experiment tests found");
         return;
@@ -80,11 +119,15 @@ async function runExperiment() {
         return;
     }
 
+    experimentReport.experimentName = exp.name || "Unnamed Experiment";
+    experimentReport.startedAt = new Date().toISOString();
+
     stim.style.display = "block";
     stim.innerHTML = "";
     document.documentElement.requestFullscreen?.();
 
     const executedLoopGroups = new Set();
+    const loopState = new Map();
 
     for (let i = 0; i < exp.tests.length; i++) {
         const t = exp.tests[i];
@@ -94,37 +137,57 @@ async function runExperiment() {
         }
 
         try {
-            // ----- LOOPED TEST GROUP -----
+            // ----- LOOPED TEST GROUP (ORDER-PRESERVING) -----
             if (t.params.loop?.enabled) {
                 const groupId = t.params.loop.group || `loop_${i}`;
 
-                // already executed this loop → skip
-                if (executedLoopGroups.has(groupId)) continue;
+                // initialize group state ONCE
+                if (!loopState.has(groupId)) {
+                    const groupTests = exp.tests.filter(
+                        tt => tt?.params?.loop?.enabled &&
+                            tt.params.loop.group === groupId
+                    );
 
-                // collect tests in this loop group (ORDER PRESERVED)
-                const loopTests = exp.tests.filter(
-                    tt => tt?.params?.loop?.enabled && tt.params.loop.group === groupId
-                );
+                    loopState.set(groupId, {
+                        tests: groupTests,
+                        queue: [],
+                        iteration: 0
+                    });
+                }
 
-                executedLoopGroups.add(groupId);
-
+                const state = loopState.get(groupId);
                 const repeat = t.params.loop.repeat || 1;
+                const randomize = t.params.loop.randomize;
                 const interDelay = t.params.loop.interDelay || 0;
 
-                for (let r = 0; r < repeat; r++) {
-                    const iterationTests = t.params.loop.randomize
-                        ? shuffleArray(loopTests)
-                        : loopTests;
+                // refill queue only if empty
+                if (state.queue.length === 0) {
+                    // stop if repeats are done
+                    if (state.iteration >= repeat) continue;
 
-                    for (const lt of iterationTests) {
-                        try {
-                            await executeTest(lt, stim);
-                        } catch (err) {
-                            console.warn("Error executing test in loop:", err, lt);
-                        }
-                        if (interDelay > 0) await wait(interDelay);
-                    }
+                    state.queue = randomize
+                        ? shuffleArray([...state.tests])
+                        : [...state.tests];
+
+                    // iteration increases **after queue fully consumed**, not now
+                    // state.iteration++;
                 }
+
+                // execute ONLY ONE test from the group
+                const nextTest = state.queue.shift();
+
+                // if queue is now empty after this test, count one iteration
+                if (state.queue.length === 0) state.iteration++;
+
+                try {
+                    await executeTest(nextTest, stim);
+                } catch (err) {
+                    console.warn("Error executing loop test:", err, nextTest);
+                }
+
+                if (interDelay > 0) await wait(interDelay);
+
+                continue;
 
             } else {
                 // ----- WORD LIST TEST / OTHER TEST -----
@@ -141,6 +204,9 @@ async function runExperiment() {
 
     stim.style.display = "none";
     document.exitFullscreen?.();
+
+    experimentReport.endedAt = new Date().toISOString();
+    downloadJSONReport();
 }
 
 
@@ -242,12 +308,14 @@ async function runSingleTest(t, stim) {
 
     const el = document.createElement("div");
 
+    const startTime = performance.now();
+
     // ===== IMAGE TEST =====
     if (t.type === "image") {
         const img = document.createElement("img");
         img.src = t.params.imageSrc || "";
-        img.style.width = (t.params.width || 100) + "px";
-        img.style.height = (t.params.height || 100) + "px";
+        img.style.width = (t.params.width || 100) + "%";
+        img.style.height = (t.params.height || 100) + "%";
         img.style.position = "absolute";
 
         setElementPosition(img, t.params.position, t.params.x, t.params.y);
@@ -256,6 +324,19 @@ async function runSingleTest(t, stim) {
 
         if (t.params.duration === -1) await waitForNKey();
         else await wait(t.params.duration || 1000);
+
+        const endTime = performance.now();
+
+        logTrial({
+            testName: t.name || "",
+            type: "image",
+            image: t.params.imageSrc || "",
+            text: "",
+            shape: "",
+            position: t.params.position,
+            color: "",
+            duration_ms: Math.round(endTime - startTime)
+        });
 
         return; // stop here for image test
     }
@@ -288,6 +369,20 @@ async function runSingleTest(t, stim) {
 
     if (t.params.duration === -1) await waitForNKey();
     else await wait(t.params.duration || 1000);
+
+    const endTime = performance.now();
+
+    logTrial({
+        testName: t.name || "",
+        type: "visual",
+        text: t.params.text || "",
+        shape: t.params.shape || "",
+        image: "",
+        position: t.params.position,
+        color: t.params.color || "",
+        duration_ms: Math.round(endTime - startTime)
+    });
+
 }
 
 
@@ -316,8 +411,8 @@ function setupShape(el, shape, w, h, color = "#000", fillMode = "fill", strokeWi
 
     switch (shape) {
         case "rectangle":
-            el.style.width = w + "px";
-            el.style.height = h + "px";
+            el.style.width = w + "%";
+            el.style.height = h + "%";
             el.style.borderRadius = borderRadius + "px";
 
             if (outline) {
@@ -340,8 +435,8 @@ function setupShape(el, shape, w, h, color = "#000", fillMode = "fill", strokeWi
             break;
 
         case "ellipse":
-            el.style.width = w + "px";
-            el.style.height = h + "px";
+            el.style.width = w + "%";
+            el.style.height = h + "%";
             el.style.borderRadius = "50% / 50%";
 
             if (outline) {
@@ -367,8 +462,8 @@ function setupShape(el, shape, w, h, color = "#000", fillMode = "fill", strokeWi
             break;
 
         case "star":
-            el.style.width = w + "px";
-            el.style.height = h + "px";
+            el.style.width = w + "%";
+            el.style.height = h + "%";
             el.style.clipPath =
                 "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)";
 
@@ -381,8 +476,8 @@ function setupShape(el, shape, w, h, color = "#000", fillMode = "fill", strokeWi
             break;
 
         default:
-            el.style.width = w + "px";
-            el.style.height = h + "px";
+            el.style.width = w + "%";
+            el.style.height = h + "%";
 
             if (outline) {
                 el.style.border = `${strokeWidth}px solid ${color}`;

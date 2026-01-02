@@ -7,15 +7,16 @@ function addVisualTest(name = "VisualTest", defaultParams = {}) {
 
     const params = {
         text: defaultParams.text ?? "",
+        fontSize: defaultParams.fontSize ?? 48,
         color: defaultParams.color ?? "#000000",
         shape: defaultParams.shape ?? "rectangle",
         fillMode: defaultParams.fillMode ?? "fill",       // "fill" or "outline"
         strokeWidth: defaultParams.strokeWidth ?? 2,      // in px
         borderRadius: defaultParams.borderRadius ?? 0,
-        width: defaultParams.width ?? 100,
-        height: defaultParams.height ?? 100,
-        delay: defaultParams.delay ?? 500,
-        duration: defaultParams.duration ?? 1000,
+        width: defaultParams.width ?? 50,
+        height: defaultParams.height ?? 50,
+        delay: defaultParams.delay ?? 0,
+        duration: defaultParams.duration ?? -1,
         position: defaultParams.position ?? "center",
         x: defaultParams.x ?? 0,
         y: defaultParams.y ?? 0,
@@ -49,10 +50,10 @@ function addImageTest(name = "ImageTest", defaultParams = {}) {
 
     const params = {
         imageSrc: defaultParams.imageSrc ?? "",
-        width: defaultParams.width ?? 200,
-        height: defaultParams.height ?? 200,
-        delay: defaultParams.delay ?? 500,
-        duration: defaultParams.duration ?? 1000,
+        width: defaultParams.width ?? 50,
+        height: defaultParams.height ?? 50,
+        delay: defaultParams.delay ?? 0,
+        duration: defaultParams.duration ?? -1,
         position: defaultParams.position ?? "center",
         x: defaultParams.x ?? 0,
         y: defaultParams.y ?? 0,
@@ -89,7 +90,7 @@ function addWordListTest(name = "WordListTest", defaultParams = {}) {
         fileUrl: defaultParams.fileUrl ?? "",
         color: defaultParams.color ?? "#000000",
         fontSize: defaultParams.fontSize ?? 48,
-        delay: defaultParams.delay ?? 500,
+        delay: defaultParams.delay ?? 0,
         duration: defaultParams.duration ?? 1000,
         position: defaultParams.position ?? "center",
         x: defaultParams.x ?? 0,
@@ -125,10 +126,10 @@ function addImageListTest(name = "ImageListTest", defaultParams = {}) {
 
     const params = {
         folderUrl: defaultParams.folderUrl ?? "",  // URL or folder JSON listing images
-        width: defaultParams.width ?? 200,
-        height: defaultParams.height ?? 200,
-        delay: defaultParams.delay ?? 500,
-        duration: defaultParams.duration ?? 1000,
+        width: defaultParams.width ?? 50,
+        height: defaultParams.height ?? 50,
+        delay: defaultParams.delay ?? 0,
+        duration: defaultParams.duration ?? -1,
         position: defaultParams.position ?? "center",
         x: defaultParams.x ?? 0,
         y: defaultParams.y ?? 0,

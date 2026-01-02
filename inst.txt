@@ -1,0 +1,97 @@
+exp.tests.push({
+        id: crypto.randomUUID(),
+        name: String (uniq)
+        type: "visual" , "image" , "wordList" , "imageList"
+        const params = {
+        text: ""
+        color: ""
+        shape: "rectangle", "circle", "ellipse" , "triangle" , "star"
+        fillMode: "fill" , "outline"
+        strokeWidth: defaultParams.strokeWidth ?? 2, // in px
+        borderRadius: defaultParams.borderRadius ?? 0,
+        width: defaultParams.width ?? 100,
+        height: defaultParams.height ?? 100,
+        delay: defaultParams.delay ?? 500,
+        duration: defaultParams.duration ?? 1000, -1
+        position: defaultParams.position ?? "center", left , right , top , buttom
+        x: defaultParams.x ?? 0,
+        y: defaultParams.y ?? 0,
+
+        loop: {
+            enabled: True , false, 
+            group:  "",
+            repeat: 1,
+            interDelay: defaultParams.loop?.interDelay ?? 0,
+            randomize: defaultParams.loop?.randomize ?? false , True
+        }
+    });
+
+
+{
+            "name": "Image - Center",
+            "type": "image",
+            "params": {
+                "imageSrc": "https://github.com/luka816/Experimets_Files/blob/master/images/img1.png?raw=true",
+                "width": 200,
+                "height": 200,
+                "delay": 500,
+                "duration": 1500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+
+
+{
+            "name": "Word List - Simple",
+            "type": "wordList",
+            "params": {
+                "fileUrl": "https://raw.githubusercontent.com/luka816/Experimets_Files/refs/heads/master/words_lists/words.json",
+                "color": "#000000",
+                "fontSize": 48,
+                "delay": 300,
+                "duration": 1000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "randomize": false,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+
+{
+            "name": "Image List - Center Random",
+            "type": "imageList",
+            "params": {
+                "folderUrl": "https://raw.githubusercontent.com/luka816/Experimets_Files/refs/heads/master/images_urls/images.json",
+                "width": 200,
+                "height": 200,
+                "delay": 300,
+                "duration": 1000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "randomize": true,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
