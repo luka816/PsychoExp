@@ -1,0 +1,1364 @@
+{
+    "name": "AHS-word-name",
+    "tests": [
+        {
+            "name": "Cross_(key)",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Cicle_response_(key)",
+            "type": "visual",
+            "params": {
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
+                "shape": "circle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 50,
+                "height": 50,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Left_Arrow_Blue_(key)",
+            "type": "visual",
+            "params": {
+                "text": "<",
+                "fontSize": 100,
+                "color": "#0000ff",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Right_Arrow_Blue_(key)",
+            "type": "visual",
+            "params": {
+                "text": ">",
+                "fontSize": 100,
+                "color": "#0000ff",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_1_Cross_ქუდი",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_1_Word_Name_ქუდი",
+            "type": "visual",
+            "params": {
+                "text": "ქუდი",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_1_ქუდი",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_1_Circle_response(key)_ქუდი",
+            "type": "visual",
+            "params": {
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
+                "shape": "circle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 50,
+                "height": 50,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_1_Cross_გიტარა",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_1_Word_Name_გიტარა",
+            "type": "visual",
+            "params": {
+                "text": "გიტარა",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_1_გიტარა",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_1_Circle_response(key)_გიტარა",
+            "type": "visual",
+            "params": {
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
+                "shape": "circle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 50,
+                "height": 50,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_1_Cross_პიცა",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_1_Word_Name_პიცა",
+            "type": "visual",
+            "params": {
+                "text": "პიცა",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_1_პიცა",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_1_Circle_response(key)_პიცა",
+            "type": "visual",
+            "params": {
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
+                "shape": "circle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 50,
+                "height": 50,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_1_Cross_ბოთლი",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_1_Word_Name_ბოთლი",
+            "type": "visual",
+            "params": {
+                "text": "ბოთლი",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_1_ბოთლი",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_1_Circle_response(key)_ბოთლი",
+            "type": "visual",
+            "params": {
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
+                "shape": "circle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 50,
+                "height": 50,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_2_Cross_ფანქარი",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_2_Word_Name_ფანქარი",
+            "type": "visual",
+            "params": {
+                "text": "ფანქარი",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "left",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_2_ფანქარი",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_2_Circle_response(key)_ფანქარი",
+            "type": "visual",
+            "params": {
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
+                "shape": "circle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 50,
+                "height": 50,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_2_Cross_ტაფა",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_2_Word_Name_ტაფა",
+            "type": "visual",
+            "params": {
+                "text": "ტაფა",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "left",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_2_ტაფა",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_2_Circle_response(key)_ტაფა",
+            "type": "visual",
+            "params": {
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
+                "shape": "circle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 50,
+                "height": 50,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_2_Cross_ტუმბო",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_2_Word_Name_ტუმბო",
+            "type": "visual",
+            "params": {
+                "text": "ტუმბო",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "left",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_2_ტუმბო",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_2_Circle_response(key)_ტუმბო",
+            "type": "visual",
+            "params": {
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
+                "shape": "circle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 50,
+                "height": 50,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_2_Cross_ზეწარი",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_2_Word_Name_ზეწარი",
+            "type": "visual",
+            "params": {
+                "text": "ზეწარი",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "left",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_2_ზეწარი",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_2_Circle_response(key)_ზეწარი",
+            "type": "visual",
+            "params": {
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
+                "shape": "circle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 50,
+                "height": 50,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_3_Cross_ფანჯარა",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_3_Word_Name_ფანჯარა",
+            "type": "visual",
+            "params": {
+                "text": "ფანჯარა",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "right",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_3_ფანჯარა",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_3_Circle_response(key)_ფანჯარა",
+            "type": "visual",
+            "params": {
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
+                "shape": "circle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 50,
+                "height": 50,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_3_Cross_ჩაქუჩი",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_3_Word_Name_ჩაქუჩი",
+            "type": "visual",
+            "params": {
+                "text": "ჩაქუჩი",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "right",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_3_ჩაქუჩი",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_3_Circle_response(key)_ჩაქუჩი",
+            "type": "visual",
+            "params": {
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
+                "shape": "circle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 50,
+                "height": 50,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_3_Cross_ნაჭერი",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_3_Word_Name_ნაჭერი",
+            "type": "visual",
+            "params": {
+                "text": "ნაჭერი",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "right",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_3_ნაჭერი",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_3_Circle_response(key)_ნაჭერი",
+            "type": "visual",
+            "params": {
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
+                "shape": "circle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 50,
+                "height": 50,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_3_Cross_კალმარი",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_3_Word_Name_კალმარი",
+            "type": "visual",
+            "params": {
+                "text": "კალმარი",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "right",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_3_კალმარი",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_3_Circle_response(key)_კალმარი",
+            "type": "visual",
+            "params": {
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
+                "shape": "circle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 50,
+                "height": 50,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Phase_1_Cross_ვაშლი",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        }
+    ]
+}

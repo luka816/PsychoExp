@@ -28,10 +28,10 @@ exp.tests.push({
 
 
 {
-            "name": "Image - Center",
-            "type": "image",
-            "params": {
-                "imageSrc": "https://github.com/luka816/Experimets_Files/blob/master/images/img1.png?raw=true",
+    "name": "Image - Center",
+    "type": "image",
+    "params": {
+        "imageSrc": "https://github.com/luka816/Experimets_Files/blob/master/images/img1.png?raw=true",
                 "width": 200,
                 "height": 200,
                 "delay": 500,

@@ -385,20 +385,65 @@ async function runSingleTest(t, stim) {
 
 }
 
+// display settings
+
+const VIEWING_DISTANCE_CM = 40;
+const SCREEN_WIDTH_CM = 35;   // measure this
+const SCREEN_HEIGHT_CM = 30;  // measure this too
+const ECCENTRICITY_DEG = 3.5;
+
+function degToPxX(deg) {
+    const pxPerCmX = window.innerWidth / SCREEN_WIDTH_CM;
+    return Math.tan(deg * Math.PI / 180) * VIEWING_DISTANCE_CM * pxPerCmX;
+}
+
+function degToPxY(deg) {
+    const pxPerCmY = window.innerHeight / SCREEN_HEIGHT_CM;
+    return Math.tan(deg * Math.PI / 180) * VIEWING_DISTANCE_CM * pxPerCmY;
+}
 
 function setElementPosition(el, position, x = 0, y = 0) {
+    const offsetX = degToPxX(ECCENTRICITY_DEG);
+    const offsetY = degToPxY(ECCENTRICITY_DEG);
+
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
+
     el.style.position = "absolute";
+    el.style.transform = "translate(-50%, -50%)";
+
     switch (position) {
-        case "center": el.style.left = "50%"; el.style.top = "50%"; el.style.transform = "translate(-50%, -50%)"; break;
-        case "left": el.style.left = "5%"; el.style.top = "50%"; el.style.transform = "translate(0, -50%)"; break;
-        case "right": el.style.left = "95%"; el.style.top = "50%"; el.style.transform = "translate(-100%, -50%)"; break;
-        case "top": el.style.left = "50%"; el.style.top = "5%"; el.style.transform = "translate(-50%, 0)"; break;
-        case "bottom": el.style.left = "50%"; el.style.top = "95%"; el.style.transform = "translate(-50%, -100%)"; break;
-        default: el.style.left = "50%"; el.style.top = "50%"; el.style.transform = "translate(-50%, -50%)";
+        case "center":
+            el.style.left = `50%`;
+            el.style.top = `50%`;
+            break;
+
+        case "left":
+            el.style.left = `${centerX - offsetX + x}px`;
+            el.style.top = `${centerY + y}px`;
+            break;
+
+        case "right":
+            el.style.left = `${centerX + offsetX + x}px`;
+            el.style.top = `${centerY + y}px`;
+            break;
+
+        case "top":
+            el.style.left = `${centerX + x}px`;
+            el.style.top = `${centerY - offsetY + y}px`;
+            break;
+
+        case "bottom":
+            el.style.left = `${centerX + x}px`;
+            el.style.top = `${centerY + offsetY + y}px`;
+            break;
+
+        default:
+            el.style.left = `${centerX}px`;
+            el.style.top = `${centerY}px`;
     }
-    el.style.marginLeft = (x || 0) + "px";
-    el.style.marginTop = -(y || 0) + "px";
 }
+
 
 function setupShape(el, shape, w, h, color = "#000", fillMode = "fill", strokeWidth = 2, borderRadius = 0) {
     // Reset styles
