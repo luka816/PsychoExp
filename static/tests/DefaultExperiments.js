@@ -13,8 +13,8 @@ async function createDefaultExps() {
             await CreateExpFromJsonURL(url);
         }
 
-        CreateExpFromJsonURL("http://127.0.0.1:8000/exps/AHS-word-name.json")
-        CreateExpFromJsonURL("http://127.0.0.1:8000/exps/AHS-word-draw.json")
+        CreateExpFromJsonURL("exps/AHS-word-name.json")
+        CreateExpFromJsonURL("exps/AHS-word-draw.json")
 
         document.getElementById("jsonArea").value = "";
     } catch (e) {
