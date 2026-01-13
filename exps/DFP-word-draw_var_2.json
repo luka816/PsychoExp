@@ -1,0 +1,1310 @@
+{
+    "name": "AHS-word-draw_var_2",
+    "tests": [
+        {
+            "name": "Cross_(key)",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Left_Arrow_Blue_(key)",
+            "type": "visual",
+            "params": {
+                "text": "<",
+                "fontSize": 100,
+                "color": "#0000ff",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Right_Arrow_Blue_(key)",
+            "type": "visual",
+            "params": {
+                "text": ">",
+                "fontSize": 100,
+                "color": "#0000ff",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "phase_2_draw_Cross_ჭიქა",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Word_2_draw_ჭიქა",
+            "type": "visual",
+            "params": {
+                "text": "ჭიქა",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_2_draw_ჭიქა",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "1_left_Arrow_Phase_2_draw_(key)__ჭიქა",
+            "type": "visual",
+            "params": {
+                "text": "<",
+                "fontSize": 100,
+                "color": "#0000ff",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "phase_2_draw_Cross_ტელეფონი",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Word_2_draw_ტელეფონი",
+            "type": "visual",
+            "params": {
+                "text": "ტელეფონი",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "right",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_2_draw_ტელეფონი",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "1_right_Arrow_Phase_2_draw_(key)__ტელეფონი",
+            "type": "visual",
+            "params": {
+                "text": ">",
+                "fontSize": 100,
+                "color": "#0000ff",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "phase_2_draw_Cross_სათვალე",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Word_2_draw_სათვალე",
+            "type": "visual",
+            "params": {
+                "text": "სათვალე",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "right",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_2_draw_სათვალე",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "1_left_Arrow_Phase_2_draw_(key)__სათვალე",
+            "type": "visual",
+            "params": {
+                "text": "<",
+                "fontSize": 100,
+                "color": "#0000ff",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "phase_2_draw_Cross_ვაშლი",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Word_2_draw_ვაშლი",
+            "type": "visual",
+            "params": {
+                "text": "ვაშლი",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_2_draw_ვაშლი",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "1_left_Arrow_Phase_2_draw_(key)__ვაშლი",
+            "type": "visual",
+            "params": {
+                "text": "<",
+                "fontSize": 100,
+                "color": "#0000ff",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "phase_2_draw_Cross_ჩაიდანი",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Word_2_draw_ჩაიდანი",
+            "type": "visual",
+            "params": {
+                "text": "ჩაიდანი",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "left",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_2_draw_ჩაიდანი",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "1_right_Arrow_Phase_2_draw_(key)__ჩაიდანი",
+            "type": "visual",
+            "params": {
+                "text": ">",
+                "fontSize": 100,
+                "color": "#0000ff",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "phase_2_draw_Cross_კუბი",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Word_2_draw_კუბი",
+            "type": "visual",
+            "params": {
+                "text": "კუბი",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "left",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_2_draw_კუბი",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "1_left_Arrow_Phase_2_draw_(key)__კუბი",
+            "type": "visual",
+            "params": {
+                "text": "<",
+                "fontSize": 100,
+                "color": "#0000ff",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "phase_2_draw_Cross_გემი",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Word_2_draw_გემი",
+            "type": "visual",
+            "params": {
+                "text": "გემი",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "right",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_2_draw_გემი",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "1_left_Arrow_Phase_2_draw_(key)__გემი",
+            "type": "visual",
+            "params": {
+                "text": "<",
+                "fontSize": 100,
+                "color": "#0000ff",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "phase_2_draw_Cross_კალათა",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Word_2_draw_კალათა",
+            "type": "visual",
+            "params": {
+                "text": "კალათა",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "left",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_2_draw_კალათა",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "1_left_Arrow_Phase_2_draw_(key)__კალათა",
+            "type": "visual",
+            "params": {
+                "text": "<",
+                "fontSize": 100,
+                "color": "#0000ff",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "phase_2_draw_Cross_ყვავილი",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Word_2_draw_ყვავილი",
+            "type": "visual",
+            "params": {
+                "text": "ყვავილი",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "left",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_2_draw_ყვავილი",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "1_right_Arrow_Phase_2_draw_(key)__ყვავილი",
+            "type": "visual",
+            "params": {
+                "text": ">",
+                "fontSize": 100,
+                "color": "#0000ff",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "phase_2_draw_Cross_გული",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Word_2_draw_გული",
+            "type": "visual",
+            "params": {
+                "text": "გული",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_2_draw_გული",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "1_right_Arrow_Phase_2_draw_(key)__გული",
+            "type": "visual",
+            "params": {
+                "text": ">",
+                "fontSize": 100,
+                "color": "#0000ff",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "phase_2_draw_Cross_წიგნი",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Word_2_draw_წიგნი",
+            "type": "visual",
+            "params": {
+                "text": "წიგნი",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_2_draw_წიგნი",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "1_right_Arrow_Phase_2_draw_(key)__წიგნი",
+            "type": "visual",
+            "params": {
+                "text": ">",
+                "fontSize": 100,
+                "color": "#0000ff",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "phase_2_draw_Cross_მანქანა",
+            "type": "visual",
+            "params": {
+                "text": "+",
+                "fontSize": 40,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 5000,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "Word_2_draw_მანქანა",
+            "type": "visual",
+            "params": {
+                "text": "მანქანა",
+                "fontSize": 50,
+                "color": "#000000",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 110,
+                "position": "right",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": true,
+                    "group": "G",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": true
+                }
+            }
+        },
+        {
+            "name": "Mask_Phase_2_draw_მანქანა",
+            "type": "image",
+            "params": {
+                "imageSrc": "static/images/mask.jpg",
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": 500,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        },
+        {
+            "name": "1_right_Arrow_Phase_2_draw_(key)__მანქანა",
+            "type": "visual",
+            "params": {
+                "text": ">",
+                "fontSize": 100,
+                "color": "#0000ff",
+                "shape": "rectangle",
+                "fillMode": "fill",
+                "strokeWidth": 2,
+                "borderRadius": 0,
+                "width": 100,
+                "height": 100,
+                "delay": 0,
+                "duration": -1,
+                "position": "center",
+                "x": 0,
+                "y": 0,
+                "loop": {
+                    "enabled": false,
+                    "group": "",
+                    "repeat": 1,
+                    "interDelay": 0,
+                    "randomize": false
+                }
+            }
+        }
+    ]
+}

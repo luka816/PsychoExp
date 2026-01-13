@@ -1,5 +1,5 @@
 {
-    "name": "AHS-word-draw",
+    "name": "AHS-word-name",
     "tests": [
         {
             "name": "Cross_(key)",
@@ -56,61 +56,7 @@
             }
         },
         {
-            "name": "Left_Arrow_Blue_(key)",
-            "type": "visual",
-            "params": {
-                "text": "<",
-                "fontSize": 100,
-                "color": "#0000ff",
-                "shape": "rectangle",
-                "fillMode": "fill",
-                "strokeWidth": 2,
-                "borderRadius": 0,
-                "width": 100,
-                "height": 100,
-                "delay": 0,
-                "duration": -1,
-                "position": "center",
-                "x": 0,
-                "y": 0,
-                "loop": {
-                    "enabled": false,
-                    "group": "",
-                    "repeat": 1,
-                    "interDelay": 0,
-                    "randomize": false
-                }
-            }
-        },
-        {
-            "name": "Right_Arrow_Blue_(key)",
-            "type": "visual",
-            "params": {
-                "text": ">",
-                "fontSize": 100,
-                "color": "#0000ff",
-                "shape": "rectangle",
-                "fillMode": "fill",
-                "strokeWidth": 2,
-                "borderRadius": 0,
-                "width": 100,
-                "height": 100,
-                "delay": 0,
-                "duration": -1,
-                "position": "center",
-                "x": 0,
-                "y": 0,
-                "loop": {
-                    "enabled": false,
-                    "group": "",
-                    "repeat": 1,
-                    "interDelay": 0,
-                    "randomize": false
-                }
-            }
-        },
-        {
-            "name": "Phase_1_Cross_ვაშლი",
+            "name": "phase_1_name_Cross_ქუდი",
             "type": "visual",
             "params": {
                 "text": "+",
@@ -137,10 +83,10 @@
             }
         },
         {
-            "name": "Phase_1_Word_Draw_ვაშლი",
+            "name": "Word_1_name_ქუდი",
             "type": "visual",
             "params": {
-                "text": "ვაშლი",
+                "text": "ქუდი",
                 "fontSize": 50,
                 "color": "#000000",
                 "shape": "rectangle",
@@ -164,7 +110,7 @@
             }
         },
         {
-            "name": "Mask_Phase_1_ვაშლი",
+            "name": "Mask_Phase_1_name_ქუდი",
             "type": "image",
             "params": {
                 "imageSrc": "static/images/mask.jpg",
@@ -185,12 +131,12 @@
             }
         },
         {
-            "name": "Phase_1_left_Arrow_(key)_ვაშლი",
+            "name": "Phase_1_name_Circle_response_0_none(naming)_ქუდი",
             "type": "visual",
             "params": {
-                "text": "<",
-                "fontSize": 100,
-                "color": "#0000ff",
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
                 "shape": "circle",
                 "fillMode": "fill",
                 "strokeWidth": 2,
@@ -212,7 +158,7 @@
             }
         },
         {
-            "name": "Phase_1_Cross_ჭიქა",
+            "name": "phase_1_name_Cross_გიტარა",
             "type": "visual",
             "params": {
                 "text": "+",
@@ -239,10 +185,10 @@
             }
         },
         {
-            "name": "Phase_1_Word_Draw_ჭიქა",
+            "name": "Word_1_name_გიტარა",
             "type": "visual",
             "params": {
-                "text": "ჭიქა",
+                "text": "გიტარა",
                 "fontSize": 50,
                 "color": "#000000",
                 "shape": "rectangle",
@@ -266,7 +212,7 @@
             }
         },
         {
-            "name": "Mask_Phase_1_ჭიქა",
+            "name": "Mask_Phase_1_name_გიტარა",
             "type": "image",
             "params": {
                 "imageSrc": "static/images/mask.jpg",
@@ -287,12 +233,12 @@
             }
         },
         {
-            "name": "Phase_1_left_Arrow_(key)_ჭიქა",
+            "name": "Phase_1_name_Circle_response_0_none(naming)_გიტარა",
             "type": "visual",
             "params": {
-                "text": "<",
-                "fontSize": 100,
-                "color": "#0000ff",
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
                 "shape": "circle",
                 "fillMode": "fill",
                 "strokeWidth": 2,
@@ -314,7 +260,7 @@
             }
         },
         {
-            "name": "Phase_1_Cross_წიგნი",
+            "name": "phase_1_name_Cross_პიცა",
             "type": "visual",
             "params": {
                 "text": "+",
@@ -341,10 +287,10 @@
             }
         },
         {
-            "name": "Phase_1_Word_Draw_წიგნი",
+            "name": "Word_1_name_პიცა",
             "type": "visual",
             "params": {
-                "text": "წიგნი",
+                "text": "პიცა",
                 "fontSize": 50,
                 "color": "#000000",
                 "shape": "rectangle",
@@ -368,7 +314,7 @@
             }
         },
         {
-            "name": "Mask_Phase_1_წიგნი",
+            "name": "Mask_Phase_1_name_პიცა",
             "type": "image",
             "params": {
                 "imageSrc": "static/images/mask.jpg",
@@ -389,12 +335,12 @@
             }
         },
         {
-            "name": "Phase_1_right_Arrow_(key)_წიგნი",
+            "name": "Phase_1_name_Circle_response_0_none(naming)_პიცა",
             "type": "visual",
             "params": {
-                "text": ">",
-                "fontSize": 100,
-                "color": "#0000ff",
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
                 "shape": "circle",
                 "fillMode": "fill",
                 "strokeWidth": 2,
@@ -416,7 +362,7 @@
             }
         },
         {
-            "name": "Phase_1_Cross_გული",
+            "name": "phase_1_name_Cross_ბოთლი",
             "type": "visual",
             "params": {
                 "text": "+",
@@ -443,10 +389,10 @@
             }
         },
         {
-            "name": "Phase_1_Word_Draw_გული",
+            "name": "Word_1_name_ბოთლი",
             "type": "visual",
             "params": {
-                "text": "გული",
+                "text": "ბოთლი",
                 "fontSize": 50,
                 "color": "#000000",
                 "shape": "rectangle",
@@ -470,7 +416,7 @@
             }
         },
         {
-            "name": "Mask_Phase_1_გული",
+            "name": "Mask_Phase_1_name_ბოთლი",
             "type": "image",
             "params": {
                 "imageSrc": "static/images/mask.jpg",
@@ -491,12 +437,12 @@
             }
         },
         {
-            "name": "Phase_1_right_Arrow_(key)_გული",
+            "name": "Phase_1_name_Circle_response_0_none(naming)_ბოთლი",
             "type": "visual",
             "params": {
-                "text": ">",
-                "fontSize": 100,
-                "color": "#0000ff",
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
                 "shape": "circle",
                 "fillMode": "fill",
                 "strokeWidth": 2,
@@ -518,7 +464,7 @@
             }
         },
         {
-            "name": "Phase_2_Cross_რობოტი",
+            "name": "phase_1_name_Cross_ფანქარი",
             "type": "visual",
             "params": {
                 "text": "+",
@@ -545,10 +491,10 @@
             }
         },
         {
-            "name": "Phase_2_Word_Draw_რობოტი",
+            "name": "Word_1_name_ფანქარი",
             "type": "visual",
             "params": {
-                "text": "რობოტი",
+                "text": "ფანქარი",
                 "fontSize": 50,
                 "color": "#000000",
                 "shape": "rectangle",
@@ -572,7 +518,7 @@
             }
         },
         {
-            "name": "Mask_Phase_2_რობოტი",
+            "name": "Mask_Phase_1_name_ფანქარი",
             "type": "image",
             "params": {
                 "imageSrc": "static/images/mask.jpg",
@@ -593,12 +539,12 @@
             }
         },
         {
-            "name": "Phase_2_right_Arrow_(key)_რობოტი",
+            "name": "Phase_1_name_Circle_response_0_none(naming)_ფანქარი",
             "type": "visual",
             "params": {
-                "text": ">",
-                "fontSize": 100,
-                "color": "#0000ff",
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
                 "shape": "circle",
                 "fillMode": "fill",
                 "strokeWidth": 2,
@@ -620,7 +566,7 @@
             }
         },
         {
-            "name": "Phase_2_Cross_ჩაიდანი",
+            "name": "phase_1_name_Cross_ტაფა",
             "type": "visual",
             "params": {
                 "text": "+",
@@ -647,10 +593,10 @@
             }
         },
         {
-            "name": "Phase_2_Word_Draw_ჩაიდანი",
+            "name": "Word_1_name_ტაფა",
             "type": "visual",
             "params": {
-                "text": "ჩაიდანი",
+                "text": "ტაფა",
                 "fontSize": 50,
                 "color": "#000000",
                 "shape": "rectangle",
@@ -674,7 +620,7 @@
             }
         },
         {
-            "name": "Mask_Phase_2_ჩაიდანი",
+            "name": "Mask_Phase_1_name_ტაფა",
             "type": "image",
             "params": {
                 "imageSrc": "static/images/mask.jpg",
@@ -695,12 +641,12 @@
             }
         },
         {
-            "name": "Phase_2_right_Arrow_(key)_ჩაიდანი",
+            "name": "Phase_1_name_Circle_response_0_none(naming)_ტაფა",
             "type": "visual",
             "params": {
-                "text": ">",
-                "fontSize": 100,
-                "color": "#0000ff",
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
                 "shape": "circle",
                 "fillMode": "fill",
                 "strokeWidth": 2,
@@ -722,7 +668,7 @@
             }
         },
         {
-            "name": "Phase_2_Cross_კუბიკი",
+            "name": "phase_1_name_Cross_კალამი",
             "type": "visual",
             "params": {
                 "text": "+",
@@ -749,10 +695,10 @@
             }
         },
         {
-            "name": "Phase_2_Word_Draw_კუბიკი",
+            "name": "Word_1_name_კალამი",
             "type": "visual",
             "params": {
-                "text": "კუბიკი",
+                "text": "კალამი",
                 "fontSize": 50,
                 "color": "#000000",
                 "shape": "rectangle",
@@ -776,7 +722,7 @@
             }
         },
         {
-            "name": "Mask_Phase_2_კუბიკი",
+            "name": "Mask_Phase_1_name_კალამი",
             "type": "image",
             "params": {
                 "imageSrc": "static/images/mask.jpg",
@@ -797,12 +743,12 @@
             }
         },
         {
-            "name": "Phase_2_left_Arrow_(key)_კუბიკი",
+            "name": "Phase_1_name_Circle_response_0_none(naming)_კალამი",
             "type": "visual",
             "params": {
-                "text": "<",
-                "fontSize": 100,
-                "color": "#0000ff",
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
                 "shape": "circle",
                 "fillMode": "fill",
                 "strokeWidth": 2,
@@ -824,7 +770,7 @@
             }
         },
         {
-            "name": "Phase_2_Cross_კალათა",
+            "name": "phase_1_name_Cross_ხე",
             "type": "visual",
             "params": {
                 "text": "+",
@@ -851,10 +797,10 @@
             }
         },
         {
-            "name": "Phase_2_Word_Draw_კალათა",
+            "name": "Word_1_name_ხე",
             "type": "visual",
             "params": {
-                "text": "კალათა",
+                "text": "ხე",
                 "fontSize": 50,
                 "color": "#000000",
                 "shape": "rectangle",
@@ -878,7 +824,7 @@
             }
         },
         {
-            "name": "Mask_Phase_2_კალათა",
+            "name": "Mask_Phase_1_name_ხე",
             "type": "image",
             "params": {
                 "imageSrc": "static/images/mask.jpg",
@@ -899,12 +845,12 @@
             }
         },
         {
-            "name": "Phase_2_left_Arrow_(key)_კალათა",
+            "name": "Phase_1_name_Circle_response_0_none(naming)_ხე",
             "type": "visual",
             "params": {
-                "text": "<",
-                "fontSize": 100,
-                "color": "#0000ff",
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
                 "shape": "circle",
                 "fillMode": "fill",
                 "strokeWidth": 2,
@@ -926,7 +872,7 @@
             }
         },
         {
-            "name": "Phase_3_Cross_გემი",
+            "name": "phase_1_name_Cross_ფანჯარა",
             "type": "visual",
             "params": {
                 "text": "+",
@@ -953,10 +899,10 @@
             }
         },
         {
-            "name": "Phase_3_Word_Draw_გემი",
+            "name": "Word_1_name_ფანჯარა",
             "type": "visual",
             "params": {
-                "text": "გემი",
+                "text": "ფანჯარა",
                 "fontSize": 50,
                 "color": "#000000",
                 "shape": "rectangle",
@@ -980,7 +926,7 @@
             }
         },
         {
-            "name": "Mask_Phase_3_გემი",
+            "name": "Mask_Phase_1_name_ფანჯარა",
             "type": "image",
             "params": {
                 "imageSrc": "static/images/mask.jpg",
@@ -1001,12 +947,12 @@
             }
         },
         {
-            "name": "Phase_3_left_Arrow_(key)_გემი",
+            "name": "Phase_1_name_Circle_response_0_none(naming)_ფანჯარა",
             "type": "visual",
             "params": {
-                "text": "<",
-                "fontSize": 100,
-                "color": "#0000ff",
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
                 "shape": "circle",
                 "fillMode": "fill",
                 "strokeWidth": 2,
@@ -1028,7 +974,7 @@
             }
         },
         {
-            "name": "Phase_3_Cross_სათვალე",
+            "name": "phase_1_name_Cross_ჩაქუჩი",
             "type": "visual",
             "params": {
                 "text": "+",
@@ -1055,10 +1001,10 @@
             }
         },
         {
-            "name": "Phase_3_Word_Draw_სათვალე",
+            "name": "Word_1_name_ჩაქუჩი",
             "type": "visual",
             "params": {
-                "text": "სათვალე",
+                "text": "ჩაქუჩი",
                 "fontSize": 50,
                 "color": "#000000",
                 "shape": "rectangle",
@@ -1082,7 +1028,7 @@
             }
         },
         {
-            "name": "Mask_Phase_3_სათვალე",
+            "name": "Mask_Phase_1_name_ჩაქუჩი",
             "type": "image",
             "params": {
                 "imageSrc": "static/images/mask.jpg",
@@ -1103,12 +1049,12 @@
             }
         },
         {
-            "name": "Phase_3_left_Arrow_(key)_სათვალე",
+            "name": "Phase_1_name_Circle_response_0_none(naming)_ჩაქუჩი",
             "type": "visual",
             "params": {
-                "text": "<",
-                "fontSize": 100,
-                "color": "#0000ff",
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
                 "shape": "circle",
                 "fillMode": "fill",
                 "strokeWidth": 2,
@@ -1130,7 +1076,7 @@
             }
         },
         {
-            "name": "Phase_3_Cross_მანქანა",
+            "name": "phase_1_name_Cross_ნაჭერი",
             "type": "visual",
             "params": {
                 "text": "+",
@@ -1157,10 +1103,10 @@
             }
         },
         {
-            "name": "Phase_3_Word_Draw_მანქანა",
+            "name": "Word_1_name_ნაჭერი",
             "type": "visual",
             "params": {
-                "text": "მანქანა",
+                "text": "ნაჭერი",
                 "fontSize": 50,
                 "color": "#000000",
                 "shape": "rectangle",
@@ -1184,7 +1130,7 @@
             }
         },
         {
-            "name": "Mask_Phase_3_მანქანა",
+            "name": "Mask_Phase_1_name_ნაჭერი",
             "type": "image",
             "params": {
                 "imageSrc": "static/images/mask.jpg",
@@ -1205,12 +1151,12 @@
             }
         },
         {
-            "name": "Phase_3_right_Arrow_(key)_მანქანა",
+            "name": "Phase_1_name_Circle_response_0_none(naming)_ნაჭერი",
             "type": "visual",
             "params": {
-                "text": ">",
-                "fontSize": 100,
-                "color": "#0000ff",
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
                 "shape": "circle",
                 "fillMode": "fill",
                 "strokeWidth": 2,
@@ -1232,7 +1178,7 @@
             }
         },
         {
-            "name": "Phase_3_Cross_საპონი",
+            "name": "phase_1_name_Cross_ყინული",
             "type": "visual",
             "params": {
                 "text": "+",
@@ -1259,10 +1205,10 @@
             }
         },
         {
-            "name": "Phase_3_Word_Draw_საპონი",
+            "name": "Word_1_name_ყინული",
             "type": "visual",
             "params": {
-                "text": "საპონი",
+                "text": "ყინული",
                 "fontSize": 50,
                 "color": "#000000",
                 "shape": "rectangle",
@@ -1286,7 +1232,7 @@
             }
         },
         {
-            "name": "Mask_Phase_3_საპონი",
+            "name": "Mask_Phase_1_name_ყინული",
             "type": "image",
             "params": {
                 "imageSrc": "static/images/mask.jpg",
@@ -1307,12 +1253,12 @@
             }
         },
         {
-            "name": "Phase_3_right_Arrow_(key)_საპონი",
+            "name": "Phase_1_name_Circle_response_0_none(naming)_ყინული",
             "type": "visual",
             "params": {
-                "text": ">",
-                "fontSize": 100,
-                "color": "#0000ff",
+                "text": "",
+                "fontSize": 48,
+                "color": "#ff0000",
                 "shape": "circle",
                 "fillMode": "fill",
                 "strokeWidth": 2,
