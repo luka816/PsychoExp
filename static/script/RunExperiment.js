@@ -85,7 +85,7 @@ function logTrial(data) {
     });
 }
 
-function downloadJSONReport() {
+/* function downloadJSONReport() {
     const safeExperiment = experimentReport.experimentName.replace(/\s+/g, "_");
     const safeParticipant = experimentReport.participantId.replace(/\s+/g, "_");
     const fileName = `${safeParticipant}_${safeExperiment}.json`;
@@ -99,6 +99,43 @@ function downloadJSONReport() {
     a.download = fileName;
     a.click();
     URL.revokeObjectURL(a.href);
+} */
+
+function downloadJSONReport() {
+  const safeExperiment = experimentReport.experimentName.replace(/\s+/g, "_");
+  const safeParticipant = experimentReport.participantId.replace(/\s+/g, "_");
+
+  // Optional: keep the filename for local download
+  const fileName = `${safeParticipant}_${safeExperiment}.json`;
+
+  // Convert the report to JSON string
+  const jsonStr = JSON.stringify(experimentReport, null, 2);
+
+  // Send data to Google Apps Script Web App
+  const URL = "https://script.google.com/macros/s/AKfycbx09PfHt_GfPTfGCysqRTe_8q3oTbwizVoUePNufv6lwaEmO1iUxq6ztzml_jTxiB8t1A/exec"; // replace with your deployed Web App URL
+
+  fetch(URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: jsonStr
+  })
+    .then(response => response.json())
+    .then(data => {
+      console.log("Server response:", data);
+      alert("Data sent successfully!");
+    })
+    .catch(error => {
+      console.error("Error sending data:", error);
+      alert("Failed to send data. You can still download locally.");
+    });
+
+  // Optional: still allow local download as backup
+  const blob = new Blob([jsonStr], { type: "application/json;charset=utf-8;" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = fileName;
+  a.click();
+  URL.revokeObjectURL(a.href);
 }
 
 
