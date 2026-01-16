@@ -424,10 +424,10 @@ async function runSingleTest(t, stim) {
 
 // display settings
 
-const VIEWING_DISTANCE_CM = 40;
-const SCREEN_WIDTH_CM = 35;   // measure this
-const SCREEN_HEIGHT_CM = 30;  // measure this too
-const ECCENTRICITY_DEG = 3.5;
+const VIEWING_DISTANCE_CM = 50;
+const SCREEN_WIDTH_CM = 41;   // measure this
+const SCREEN_HEIGHT_CM = 26;  // measure this too
+const ECCENTRICITY_DEG = 3;
 
 function degToPxX(deg) {
     const pxPerCmX = window.innerWidth / SCREEN_WIDTH_CM;
